@@ -30,9 +30,9 @@ public class IODemo {
 
     public static void main(String[] args) {
         try {
-            byte[] writeBytes = {11,21,40,12};
+            char[] writeBytes = {'a','b','4'};
             OutputStream os = new FileOutputStream("E:/Java/test.txt");
-            for (byte b :
+            for (char b :
                     writeBytes) {
                 os.write(b);
             }
@@ -42,7 +42,7 @@ public class IODemo {
 
             int size = input.available();
             for (int i = 0; i < size; i++) {
-                System.out.println(input.read() + " ");
+                System.out.println((char) input.read() + " ");
             }
             input.close();
         } catch (IOException e) {
