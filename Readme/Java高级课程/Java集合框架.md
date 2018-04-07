@@ -14,6 +14,39 @@
 
 > Java提供了一套实现了Collection接口的标准集合类。其中一些是具体类，这些类可以直接拿来使用，而另外一些是抽象类，提供了接口的部分实现。
 
+### 标准集合类
+
+1. LinkedList 
+    - 链表 允许null 查找效率低 
+    - 没有同步方法，必须自己实现访问同步 Listlist=Collections.synchronizedList(newLinkedList(...));
+1. ArrayList
+    - 该类也是实现了List的接口，实现了可变大小的数组，随机访问和遍历元素时，提供更好的性能。
+    - 该类也是非同步的,在多线程的情况下不要使用。
+    - ArrayList 增长当前长度的50%，插入删除效率低。
+1. HashSet
+    - 该类实现了Set接口，不允许出现重复元素。
+    - 不保证集合中元素的顺序，允许包含值为null的元素，但最多只能一个。
+1. HashMap 
+    - HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。
+    - 该类实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。
+1. LinkedHashMap 
+    - 继承于HashMap，使用元素的自然顺序对元素进行排序.
+
+### java.util包中的类
+
+1. Vector
+    - 该类和ArrayList非常相似，但是该类是同步的，可以用在多线程的情况，该类允许设置默认的增长长度，默认扩容方式为原来的2倍。
+1. Stack
+    - 栈是Vector的一个子类，它实现了一个标准的后进先出的栈。
+1. Dictionary
+    - Dictionary 类是一个抽象类，用来存储键/值对，作用和Map类相似。
+1. Hashtable
+    - hashtable 是 Dictionary(字典) 类的子类，位于 java.util 包中。
+1. Properties
+    - Properties 继承于 Hashtable，表示一个持久的属性集，属性列表中每个键及其对应值都是一个字符串。
+1. Bitset
+    - 一个Bitset类创建一种特殊类型的数组来保存位值。BitSet中数组大小会随需要增加。
+
 ## 集合算法
 
 - 集合框架定义了几种算法，可用于集合和映射。这些算法被定义为集合类的静态方法。
