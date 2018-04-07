@@ -9,6 +9,11 @@ import java.lang.reflect.Method;
 
 public class AnnotationDemo {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, ClassNotFoundException {
+        //class.isInstance()
+        //public native boolean isInstance(Object obj);
+        String s1 = "1234";
+        System.out.println("s1 is instance of String:" + String.class.isInstance(s1));
+
         //直接获取一个对象的class
         Class<?> klass = int.class;
         Class<?> classInt = Integer.TYPE;
