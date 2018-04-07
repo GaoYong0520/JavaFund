@@ -1,4 +1,4 @@
-package annotation;
+package reflection;
 
 public class Calc {
     public int sum(int a, int b) {

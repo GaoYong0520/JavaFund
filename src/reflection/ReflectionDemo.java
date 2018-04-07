@@ -1,13 +1,11 @@
-package annotation;
-
-import inheritance.Animal;
+package reflection;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class AnnotationDemo {
+public class ReflectionDemo {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, ClassNotFoundException {
         //class.isInstance()
         //public native boolean isInstance(Object obj);
@@ -48,7 +46,7 @@ public class AnnotationDemo {
         System.out.println("------------------------------------");
 
         //获取方法
-        Class<?> demo = AnnotationDemo.class;
+        Class<?> demo = ReflectionDemo.class;
         Object ojbk = demo.newInstance();
 
         //获取所有方法
