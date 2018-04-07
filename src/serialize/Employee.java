@@ -9,8 +9,7 @@ public class Employee implements Serializable {
     public int number;
     public void mailCheck()
     {
-        System.out.println("Mailing a check to " + name
-                + " " + address);
+        System.out.println("Mailing a check to " + name + " " + address);
     }
-
 }
+
