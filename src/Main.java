@@ -74,7 +74,7 @@ public class Main {
 //        Animal animal = new Animal();
 //        animal.Speak();
 //
-//        Dog dog = new Dog();
+//        Proxy dog = new Proxy();
 //        dog.Speak();
 //
 //        Cat cat = new Cat();
@@ -95,7 +95,7 @@ public class Main {
 //        virtualdemo.Son s = new virtualdemo.Son();
 
 
-        //abstraction.Dog dog = new abstraction.Dog();
+        //abstraction.Proxy dog = new abstraction.Proxy();
         Pig pig = new Pig();
         Pig.speak("Pig");
 
