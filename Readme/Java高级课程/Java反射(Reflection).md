@@ -15,7 +15,7 @@
     5. 重点：是运行时而不是编译时
 3. 反射的基本运用
     1. 获得Class对象
-        - 使用Class类的forName静态方法:
+        - 使用Class类的forName静态方法: 得到字节码文件对象
             - public static Class<?> forName(String className)
         - 直接获取某一个对象的class
             - Class<?> klass = int.class;
