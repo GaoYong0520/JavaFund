@@ -1,8 +1,12 @@
 # Java注解
 
 ### 参考连接
+<ul>
+    <li>
+        <a href="https://zhuanlan.zhihu.com/p/27643133">知乎专栏-注解入门</a>
+    </li>
+</ul>
 
-![知乎专栏-注解参考](https://zhuanlan.zhihu.com/p/27643133)
 
 ## 源注解
 
