@@ -1,7 +1,7 @@
 package design.decorator;
 
 /*
-装饰着
+装饰者
  */
 public class Decorator implements Component {
     private Component component;
